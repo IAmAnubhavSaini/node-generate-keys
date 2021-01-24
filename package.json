@@ -1,0 +1,23 @@
+{
+  "name": "@f0c1s/generate-keys",
+  "version": "2021.1.1",
+  "description": "Predefined keys generated for given passphrase; returns {privateKey, publicKey}",
+  "main": "src/generate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IAmAnubhavSaini/node-generate-keys.git"
+  },
+  "keywords": [
+    "public-key",
+    "cryptography"
+  ],
+  "author": "Anubhav <iamanubhavsaini@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IAmAnubhavSaini/node-generate-keys/issues"
+  },
+  "homepage": "https://github.com/IAmAnubhavSaini/node-generate-keys#readme"
+}
