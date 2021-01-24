@@ -33,4 +33,4 @@ function generatePublicKey(publicKeyString) {
     })
 }
 
-module.exports = generateAPair
+module.exports = {generateAPair, generatePublicKey, generatePrivateKey}

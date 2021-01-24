@@ -1,4 +1,4 @@
-const generateKeys = require('./generate')
+const {generateKeys} = require('./generate')
 const {publicEncrypt, privateDecrypt} = require('crypto')
 
 describe('generateKeys', () => {
