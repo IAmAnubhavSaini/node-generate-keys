@@ -1,10 +1,10 @@
 {
   "name": "@f0c1s/generate-keys",
-  "version": "2021.1.1",
+  "version": "2021.1.24",
   "description": "Predefined keys generated for given passphrase; returns {privateKey, publicKey}",
   "main": "src/generate.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/IAmAnubhavSaini/node-generate-keys/issues"
   },
-  "homepage": "https://github.com/IAmAnubhavSaini/node-generate-keys#readme"
+  "homepage": "https://github.com/IAmAnubhavSaini/node-generate-keys#readme",
+  "devDependencies": {
+    "@types/jasmine": "^3.6.3",
+    "@types/node": "^14.14.22",
+    "jasmine": "^3.6.4"
+  },
+  "dependencies": {}
 }
