@@ -6,13 +6,14 @@ Predefined keys generated for given passphrase; returns {privateKey, publicKey}
 
 ```javascript
 
-const generateKeys = require('@f0c1s/generate-keys')
-const {publicEncrypt, privateDecrypt} = require('crypto')
-const passphrase = 'nani?'
-const message = `it's over 9000!!!`
-const {publicKey, privateKey, options, generatePrivateKey, generatePublicKey} = generateKeys(passphrase)
-const encrypted = publicEncrypt(publicKey, Buffer.from(message))
-const decrypted = privateDecrypt(generatePrivateKey(Buffer.from(privateKey.toString()), passphrase), encrypted)
+import {generateAPair} from "./generate";
+import {privateDecrypt, publicEncrypt} from "crypto";
+const passphrase = 'nani?';
+const message = `it's over 9000!!!`;
+const {publicKey, privateKey, generatePrivateKey} = generateAPair(passphrase);
+const encrypted = publicEncrypt(publicKey, Buffer.from(message));
+const decrypted = privateDecrypt(generatePrivateKey(Buffer.from(privateKey.toString()), passphrase), encrypted);
+
 
 ```
 
@@ -20,14 +21,14 @@ const decrypted = privateDecrypt(generatePrivateKey(Buffer.from(privateKey.toStr
 
 ```javascript
 
-const generateKeys = require('@f0c1s/generate-keys')
-const {publicEncrypt, privateDecrypt} = require('crypto')
-const passphrase = 'nani?'
-const message = `it's over 9000!!!`
-const {publicKey, privateKey, options, generatePrivateKey, generatePublicKey} = generateKeys(passphrase)
-const generatedPublicKey = generatePublicKey(publicKey.toString())
-const encrypted = publicEncrypt(generatedPublicKey, Buffer.from(message))
-const decrypted = privateDecrypt(generatePrivateKey(Buffer.from(privateKey.toString()), passphrase), encrypted)
+import {generateAPair} from "./generate";
+import {privateDecrypt, publicEncrypt} from "crypto";
+const passphrase = 'nani?';
+const message = `it's over 9000!!!`;
+const {publicKey, privateKey, generatePrivateKey, generatePublicKey} = generateAPair(passphrase);
+const generatedPublicKey = generatePublicKey(publicKey.toString());
+const encrypted = publicEncrypt(generatedPublicKey, Buffer.from(message));
+const decrypted = privateDecrypt(generatePrivateKey(Buffer.from(privateKey.toString()), passphrase), encrypted);
 
 ```
 

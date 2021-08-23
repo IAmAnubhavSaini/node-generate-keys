@@ -1,10 +1,11 @@
 {
   "name": "@f0c1s/generate-keys",
-  "version": "2021.1.25",
+  "version": "2022.0.0",
   "description": "Predefined keys generated for given passphrase; returns {privateKey, publicKey}",
-  "main": "src/generate.js",
+  "main": "src/generate.ts",
   "scripts": {
-    "test": "jasmine"
+    "test": "npm run build && jasmine",
+    "build": "tsc --project tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -22,8 +23,7 @@
   "homepage": "https://github.com/IAmAnubhavSaini/node-generate-keys#readme",
   "devDependencies": {
     "@types/jasmine": "^3.6.3",
-    "@types/node": "^14.14.22",
+    "@types/node": "^14.17.11",
     "jasmine": "^3.6.4"
-  },
-  "dependencies": {}
+  }
 }
