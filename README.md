@@ -30,3 +30,7 @@ const encrypted = publicEncrypt(generatedPublicKey, Buffer.from(message))
 const decrypted = privateDecrypt(generatePrivateKey(Buffer.from(privateKey.toString()), passphrase), encrypted)
 
 ```
+
+## Using module in express app
+
+[blog post](https://learning-everything-about-programming.blogspot.com/2021/01/generate-pair-of-cryptographic-keys.html)
